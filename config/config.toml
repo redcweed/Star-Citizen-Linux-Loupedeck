@@ -10,44 +10,46 @@ keepalive = 10000
 
 # --| Button 0 -------------------
 [touch.0]
-text = "Test Button"
+text = "\nGUNS"
 cmd_type = "shell"
-command = "result=$($HOME/_dev/languages/pwsh/random/ps_test_1.ps1); echo $result"
+command = "xdotool key F5"
 start_command = ""
-color = "#202020"
-down_color = "#343434"
-text_color = "#ffffff"
-text_down_color = "#909090"
+color = "#005020"
+down_color = "#003816"
+text_color = "#00FF64"
+text_down_color = "#00FF64"
+
 
 [touch.0.press_overlay]
 duration = 1
-text = "Volume Up: %output%"
+text = ""
 
 # --| Button 1 -------------------
 [touch.1]
-text = "Mqtt"
-cmd_type = "mqtt"
-command = '{"message": "button_1 output"}'
+text = "\n--------------"
+cmd_type = "shell"
+command = ""
 start_command = ""
-color = ""
-down_color = "#222222"
-text_color = "#343434"
-text_down_color = "#dfdfdf"
+color = "#080808"
+down_color = "#202020"
+text_color = "#00FF64"
+text_down_color = "#909090"
 
 [touch.1.press_overlay]
 duration = 1
-text = "Command issued"
+text = ""
 
 # --| Button 2 -------------------
 [touch.2]
-text = "Script"
+text = "\nSHLD"
 cmd_type = "shell"
-command = "result=$(alacritty -e '$HOME/_dev/languages/pwsh/bitwarden/bw.ps1'); echo $result"
+command = "xdotool key F7"
 start_command = ""
-color = ""
-down_color = ""
-text_color = "#343434"
-text_down_color = "#909090"
+color = "#005020"
+down_color = "#003816"
+text_color = "#00FF64"
+text_down_color = "#00FF64"
+
 
 [touch.2.press_overlay]
 duration = 1
@@ -55,14 +57,15 @@ text = "Command issued"
 
 # --| Button 3 -------------------
 [touch.3]
-text = "Password"
+text = "\nMAP"
 cmd_type = "shell"
-command = "rofi-rbw -a copy"
+command = "xdotool key F2"
 start_command = ""
-color = ""
-down_color = ""
-text_color = "#343434"
-text_down_color = "#909090"
+color = "#004B1D"
+down_color = "#003816"
+text_color = "#00FF64"
+text_down_color = "#00FF64"
+
 
 [touch.3.press_overlay]
 duration = 1
@@ -70,14 +73,14 @@ text = "Command issued"
 
 # --| Button 4 -------------------
 [touch.4]
-text = "GoodSmell"
+text = "\nATC"
 cmd_type = "shell"
-command = "current_output=$(./scripts/toggle_wax_heater.ps1); echo $current_output"
+command = "xdotool key Control_L + F"
 start_command = ""
-color = ""
-down_color = ""
-text_color = "#343434"
-text_down_color = "#909090"
+color = "#004B1D"
+down_color = "#003816"
+text_color = "#00FF64"
+text_down_color = "#00FF64"
 
 [touch.4.press_overlay]
 duration = 1
@@ -85,13 +88,13 @@ text = "Volume Down: %output%"
 
 # --| Button 5 -------------------
 [touch.5]
-text = "_____"
+text = "  \\    \n    \\  \n      \\\n"
 cmd_type = "shell"
-command = "echo 'Button 5 pressed'"
+command = ""
 start_command = ""
-color = ""
-down_color = ""
-text_color = "#343434"
+color = "#000000"
+down_color = "#202020"
+text_color = "#00FF64"
 text_down_color = "#909090"
 
 [touch.5.press_overlay]
@@ -100,15 +103,14 @@ text = "Command issued"
 
 # --| Button 6 -------------------
 [touch.6]
-text = "____"
+text = "\nRESET"
 cmd_type = "shell"
-command = ""
+command = "xdotool key F8"
 start_command = ""
-# command = "current_output=$(scripts/toggle_wax_heater.ps1); echo $current_output"
-color = ""
-down_color = ""
-text_color = "#343434"
-text_down_color = "#909090"
+color = "#005020"
+down_color = "#003816"
+text_color = "#00FF64"
+text_down_color = "#00FF64"
 
 [touch.6.press_overlay]
 duration = 2
@@ -116,14 +118,13 @@ text = "Device: %output%"
 
 # --| Button 7 -------------------
 [touch.7]
-text = "Source"
+text = "      / \n   /  \n/   \n"
 cmd_type = "shell"
 command = ""
 start_command = ""
-# command = "current_output=$(scripts/change_output.ps1); echo $current_output"
-color = ""
-down_color = ""
-text_color = "#343434"
+color = "#000000"
+down_color = "#202020"
+text_color = "#00FF64"
 text_down_color = "#909090"
 
 [touch.7.press_overlay]
@@ -134,14 +135,15 @@ text = "Source Selected: %output%.%"
 
 # --| Button 8 -------------------
 [touch.8]
-text = ""
+text = "\nACCEPT"
 cmd_type = "shell"
-command = "reload_config"
+command = "xdotool key bracketleft"
 start_command = ""
-color = ""
-down_color = ""
-text_color = "#343434"
-text_down_color = "#909090"
+color = "#004B1D"
+down_color = "#003816"
+text_color = "#00FF64"
+text_down_color = "#00FF64"
+
 
 [touch.8.press_overlay]
 duration = 1
@@ -149,14 +151,15 @@ text = "Config Reloaded"
 
 # --| Button 9 -------------------
 [touch.9]
-text = "PC +2%"
+text = "\nREJECT"
 cmd_type = "shell"
-command = "result=$(./scripts/vol_up.ps1); echo $result"
+command = "xdotool key bracketright"
 start_command = ""
-color = "#202020"
-down_color = "#343434"
-text_color = "#ffffff"
-text_down_color = "#909090"
+color = "#600000"
+down_color = "#FF0000"
+text_color = "#00FF64"
+text_down_color = "#00FF64"
+
 
 [touch.9.press_overlay]
 duration = 1
@@ -164,13 +167,13 @@ text = "Volume Up: %output%"
 
 # --| Button 10 ------------------
 [touch.10]
-text = ""
+text = "            \\"
 cmd_type = "shell"
 command = ""
 start_command = ""
-color = ""
-down_color = ""
-text_color = "#343434"
+color = "#000000"
+down_color = "#202020"
+text_color = "#00FF64"
 text_down_color = "#909090"
 
 [touch.10.press_overlay]
@@ -179,14 +182,15 @@ text = ""
 
 # --| Button 11 ------------------
 [touch.11]
-text = ""
+text = "\nENGS"
 cmd_type = "shell"
-command = ""
+command = "xdotool key F6"
 start_command = ""
-color = ""
-down_color = ""
-text_color = "#343434"
-text_down_color = "#909090"
+color = "#005020"
+down_color = "#003816"
+text_color = "#00FF64"
+text_down_color = "#00FF64"
+
 
 [touch.11.press_overlay]
 duration = 1
@@ -194,13 +198,13 @@ text = ""
 
 # --| Button 12 ------------------
 [touch.12]
-text = ""
+text = "/             "
 cmd_type = "shell"
 command = ""
 start_command = ""
-color = ""
-down_color = ""
-text_color = "#343434"
+color = "#000000"
+down_color = "#202020"
+text_color = "#00FF64"
 text_down_color = "#909090"
 
 [touch.12.press_overlay]
@@ -209,29 +213,31 @@ text = ""
 
 # --| Button 13 ------------------
 [touch.13]
-text = "Home\nAssistant"
+text = "\nVTOL"
 cmd_type = "shell"
-command = "/usr/bin/firefoxpwa site launch 01G40VQQE1H4C0ZP3SFW4PED5Q"
+command = "xdotool key k"
 start_command = ""
-color = ""
-down_color = ""
-text_color = "#343434"
-text_down_color = "#909090"
+color = "#004B1D"
+down_color = "#003816"
+text_color = "#00FF64"
+text_down_color = "#00FF64"
+
 
 [touch.13.press_overlay]
 duration = 1
-text = ""
+text = "LIGHTS"
 
 # --| Button 14 ------------------
 [touch.14]
-text = "PC -2%"
+text = "\nLIGHTS"
 cmd_type = "shell"
-command = "result=$(./scripts/vol_down.ps1); echo $result"
+command = "xdotool key l"
 start_command = ""
-color = "#202020"
-down_color = "#343434"
-text_color = "#ffffff"
-text_down_color = "#909090"
+color = "#004B1D"
+down_color = "#003816"
+text_color = "#00FF64"
+text_down_color = "#00FF64"
+
 
 [touch.14.press_overlay]
 duration = 1
@@ -244,49 +250,49 @@ color = [255, 0, 180]
 # --| Top Knob -------------------
 [wheel.knobTL.left]
 cmd_type = "shell"
-command = "amixer set Master 5%- > /dev/null 2>&1 && results=$(amixer sget Master | awk -F\"[][]\" '/Left:/ { print $2 }'); echo $results"
+command = "xdotool key Shift_L + comma"
 
 [wheel.knobTL.right]
 cmd_type = "shell"
-command = "amixer set Master 5%+ > /dev/null 2>&1 && results=$(amixer sget Master | awk -F\"[][]\" '/Left:/ { print $2 }'); echo $results"
+command = "xdotool key Shift_L + period"
 
 [button.knobTL]
 cmd_type = "shell"
-command = "echo button.knobTL"
+command = "xdotool key Shift_L + backslash"
 
 # --| Bottom Knob ----------------
 [wheel.knobCL.left]
 cmd_type = "shell"
-command = "echo wheel.knobCL.left"
+command = "xdotool key comma"
 
 [wheel.knobCL.right]
 cmd_type = "shell"
-command = "echo wheel.knobCL.right"
+command = "xdotool key period"
 
 [button.knobCL]
 cmd_type = "shell"
-command = "echo button.knobCL"
+command = "xdotool key tab"
 
 # --| Button 0 ------------------
 [button.0]
 cmd_type = "shell"
-command = "echo button.0"
-color = ""
+command = "xdotool key r"
+color = "#008000"
 
 # --| Button 1 ------------------
 [button.1]
 cmd_type = "shell"
-command = "echo button.1"
-color = ""
+command = "xdotool key o"
+color = "#008000"
 
 # --| Button 2 ------------------
 [button.2]
 cmd_type = "shell"
-command = "echo button.2"
-color = ""
+command = "xdotool key i"
+color = "#008000"
 
 # --| Button 3 ------------------
 [button.3]
 cmd_type = "shell"
-command = "echo button.3"
-color = ""
+command = "xdotool key p"
+color = "#008000"
